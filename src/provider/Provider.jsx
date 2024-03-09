@@ -2,6 +2,19 @@ import { v4 as uuidv4 } from 'uuid';
 import {createContext} from 'react';
 
 const data = {
+    commons : {
+        logo : "https://thegameawards.com/assets/2023/09/2023-09-13-01.jpg",
+        social : [
+            {id: uuidv4(), title: "TWITTER" , href : "#", svg:""},
+            {id: uuidv4(), title: "INSTAGRAM" , href : "#", svg:""},
+            {id: uuidv4(), title: "FACEBOOK" , href : "#", svg:""},
+            {id: uuidv4(), title: "YOUTUBE" , href : "#", svg:""},
+            {id: uuidv4(), title: "DISCORD" , href : "#", svg:""},
+            {id: uuidv4(), title: "TWITCH" , href : "#", svg:""},
+            {id: uuidv4(), title: "TIKTOK" , href : "#", svg:""},
+            {id: uuidv4(), title: "LINKEDIN" , href : "#", svg:""},
+        ]
+    },
     header : [
         {id: uuidv4(), title: "NEWS"        , href : "#", disabled: false},
         {id: uuidv4(), title: "WINNERS"     , href : "#", disabled: false},
@@ -49,8 +62,10 @@ const data = {
             src : "https://thegameawards.com/assets/2023/09/2023-09-13-01.jpg"
         }
     ],
-    explore: {},
-    insider: {},    
+    explore: [
+        {id: uuidv4(), title: "VOTING CLOSED", href : "#", svg:""},
+        {id: uuidv4(), title: "ALL NEW FUTURE CLASS", href : "#", svg:""},
+    ],
 }
 
 export const GlobalContext = createContext();
